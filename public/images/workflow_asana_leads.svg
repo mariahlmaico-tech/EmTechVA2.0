@@ -1,0 +1,76 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 650' width='100%' height='100%' style='background:#0f172a; font-family: system-ui, sans-serif;'>
+  <rect width='1200' height='650' fill='#0b0f19'/>
+  <rect width='1200' height='650' fill='url(#grid)' />
+
+  <rect x='40' y='25' width='420' height='38' rx='8' fill='#1e293b' stroke='#f43f5e' stroke-width='1.5'/>
+  <text x='55' y='50' fill='#ffffff' font-size='14' font-weight='bold'>Asana & Zapier • Multi-Branch Lead Management</text>
+
+  <!-- Level 1: Root Asana -->
+  <rect x='460' y='25' width='280' height='54' rx='10' fill='#1e293b' stroke='#f43f5e' stroke-width='1.5'/>
+  <text x='480' y='47' fill='#fb7185' font-size='11' font-weight='bold'>Asana: 1. Updated Task</text>
+  <text x='480' y='65' fill='#94a3b8' font-size='10'>Trigger: Task status/custom field updated</text>
+
+  <line x1='600' y1='79' x2='600' y2='103' stroke='#f43f5e' stroke-width='2'/>
+
+  <!-- Level 2: Paths Splitter -->
+  <rect x='460' y='105' width='280' height='50' rx='10' fill='#1e293b' stroke='#ff4f00' stroke-width='1.5'/>
+  <text x='480' y='135' fill='#ff7a38' font-size='11' font-weight='bold'>Paths: 2. Split into 5 Status Branches</text>
+
+  <!-- 5 Branch Lines -->
+  <path d='M 600 155 L 600 180 L 110 180 L 110 205' fill='none' stroke='#6366f1' stroke-width='2'/>
+  <path d='M 600 155 L 600 180 L 350 180 L 350 205' fill='none' stroke='#f59e0b' stroke-width='2'/>
+  <path d='M 600 155 L 600 180 L 600 180 L 600 205' fill='none' stroke='#3b82f6' stroke-width='2'/>
+  <path d='M 600 155 L 600 180 L 850 180 L 850 205' fill='none' stroke='#10b981' stroke-width='2'/>
+  <path d='M 600 155 L 600 180 L 1090 180 L 1090 205' fill='none' stroke='#ec4899' stroke-width='2'/>
+
+  <!-- Branch 1: Ready to Start -->
+  <rect x='20' y='205' width='180' height='170' rx='8' fill='#1e293b' stroke='#6366f1' stroke-width='1.5'/>
+  <rect x='30' y='215' width='160' height='26' rx='5' fill='#312e81'/>
+  <text x='40' y='232' fill='#a5b4fc' font-size='11' font-weight='bold'>Ready to Start</text>
+  <text x='35' y='260' fill='#cbd5e1' font-size='9.5'>3. Path conditions</text>
+  <text x='35' y='285' fill='#60a5fa' font-size='9.5'>4. Google Drive: Create Folder</text>
+  <text x='35' y='310' fill='#fb7185' font-size='9.5'>5. Asana: Create Subtask</text>
+
+  <!-- Branch 2: No Response -->
+  <rect x='260' y='205' width='180' height='130' rx='8' fill='#1e293b' stroke='#f59e0b' stroke-width='1.5'/>
+  <rect x='270' y='215' width='160' height='26' rx='5' fill='#78350f'/>
+  <text x='280' y='232' fill='#fde68a' font-size='11' font-weight='bold'>No Response</text>
+  <text x='275' y='260' fill='#cbd5e1' font-size='9.5'>6. Path conditions</text>
+  <text x='275' y='285' fill='#f87171' font-size='9.5'>7. Gmail: Send Email</text>
+
+  <!-- Branch 3: Quoted -->
+  <rect x='510' y='205' width='180' height='130' rx='8' fill='#1e293b' stroke='#3b82f6' stroke-width='1.5'/>
+  <rect x='520' y='215' width='160' height='26' rx='5' fill='#1e3a8a'/>
+  <text x='530' y='232' fill='#93c5fd' font-size='11' font-weight='bold'>Quoted</text>
+  <text x='525' y='260' fill='#cbd5e1' font-size='9.5'>8. Path conditions</text>
+  <text x='525' y='285' fill='#f87171' font-size='9.5'>9. Gmail: Send Email</text>
+
+  <!-- Branch 4: Approved -->
+  <rect x='760' y='205' width='180' height='130' rx='8' fill='#1e293b' stroke='#10b981' stroke-width='1.5'/>
+  <rect x='770' y='215' width='160' height='26' rx='5' fill='#064e3b'/>
+  <text x='780' y='232' fill='#6ee7b7' font-size='11' font-weight='bold'>Approved</text>
+  <text x='775' y='260' fill='#cbd5e1' font-size='9.5'>10. Path conditions</text>
+  <text x='775' y='285' fill='#f87171' font-size='9.5'>11. Gmail: Send Email</text>
+
+  <!-- Branch 5: Paid & Closed (with Sub-branches) -->
+  <rect x='1000' y='205' width='180' height='170' rx='8' fill='#1e293b' stroke='#ec4899' stroke-width='1.5'/>
+  <rect x='1010' y='215' width='160' height='26' rx='5' fill='#831843'/>
+  <text x='1020' y='232' fill='#fbcfe8' font-size='11' font-weight='bold'>Paid and Closed</text>
+  <text x='1015' y='260' fill='#cbd5e1' font-size='9.5'>12. Path conditions</text>
+  <text x='1015' y='285' fill='#f87171' font-size='9.5'>13. Gmail: Send Email</text>
+  <text x='1015' y='310' fill='#ff7a38' font-size='9.5'>14. Split into Service paths</text>
+
+  <!-- Sub-branches under Paid and Closed -->
+  <path d='M 1090 375 L 1090 400 L 980 400 L 980 425' fill='none' stroke='#ec4899' stroke-width='1.5'/>
+  <path d='M 1090 375 L 1090 400 L 1110 400 L 1110 425' fill='none' stroke='#ec4899' stroke-width='1.5'/>
+
+  <rect x='900' y='425' width='150' height='110' rx='6' fill='#1e293b' stroke='#818cf8' stroke-width='1'/>
+  <text x='910' y='445' fill='#c7d2fe' font-size='10' font-weight='bold'>Service 1 (Plan A)</text>
+  <text x='910' y='468' fill='#cbd5e1' font-size='9'>15. Path conditions</text>
+  <text x='910' y='490' fill='#f87171' font-size='9'>16. Send Email</text>
+
+  <rect x='1060' y='425' width='130' height='110' rx='6' fill='#1e293b' stroke='#c084fc' stroke-width='1'/>
+  <text x='1070' y='445' fill='#e9d5ff' font-size='10' font-weight='bold'>Service 2 (Plan B)</text>
+  <text x='1070' y='468' fill='#cbd5e1' font-size='9'>17. Path conditions</text>
+  <text x='1070' y='490' fill='#f87171' font-size='9'>18. Send Email</text>
+</svg>

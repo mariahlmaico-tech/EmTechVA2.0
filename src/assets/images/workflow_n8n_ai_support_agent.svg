@@ -1,0 +1,41 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 650' width='100%' height='100%' style='background:#0f172a; font-family: system-ui, sans-serif;'>
+  <rect width='1200' height='650' fill='#0b0f19'/>
+  <rect width='1200' height='650' fill='url(#grid)' />
+
+  <rect x='40' y='25' width='440' height='38' rx='8' fill='#1e293b' stroke='#10b981' stroke-width='1.5'/>
+  <text x='55' y='50' fill='#ffffff' font-size='14' font-weight='bold'>n8n • AI Agent & Customer Support Webhook Bot</text>
+
+  <g transform='translate(100, 180)'>
+    <!-- Webhook Trigger -->
+    <rect x='50' y='120' width='130' height='60' rx='10' fill='#1e293b' stroke='#f97316' stroke-width='1.5'/>
+    <text x='115' y='155' fill='#fdba74' font-size='12' font-weight='bold' text-anchor='middle'>Webhook (POST)</text>
+
+    <line x1='180' y1='150' x2='260' y2='150' stroke='#f97316' stroke-width='2'/>
+
+    <!-- Filter Node -->
+    <rect x='260' y='120' width='110' height='60' rx='10' fill='#1e293b' stroke='#3b82f6' stroke-width='1.5'/>
+    <text x='315' y='155' fill='#93c5fd' font-size='12' font-weight='bold' text-anchor='middle'>Filter</text>
+
+    <line x1='370' y1='150' x2='450' y2='150' stroke='#3b82f6' stroke-width='2'/>
+
+    <!-- AI Agent Main Node -->
+    <rect x='450' y='90' width='220' height='120' rx='12' fill='#1e293b' stroke='#10b981' stroke-width='2'/>
+    <text x='560' y='130' fill='#34d399' font-size='15' font-weight='bold' text-anchor='middle'>AI Agent</text>
+    <text x='560' y='155' fill='#cbd5e1' font-size='11' text-anchor='middle'>Processes Messenger Payload</text>
+
+    <!-- Sub-models connected to AI Agent -->
+    <line x1='500' y1='210' x2='450' y2='270' stroke='#10b981' stroke-width='1.5' stroke-dasharray='3,3'/>
+    <circle cx='450' cy='295' r='25' fill='#4285f4'/>
+    <text x='450' y='299' fill='#ffffff' font-size='9' font-weight='bold' text-anchor='middle'>Gemini AI</text>
+
+    <line x1='620' y1='210' x2='670' y2='270' stroke='#10b981' stroke-width='1.5' stroke-dasharray='3,3'/>
+    <circle cx='670' cy='295' r='25' fill='#10b981'/>
+    <text x='670' y='299' fill='#ffffff' font-size='9' font-weight='bold' text-anchor='middle'>Memory</text>
+
+    <line x1='670' y1='150' x2='750' y2='150' stroke='#10b981' stroke-width='2'/>
+
+    <!-- HTTP Request Output -->
+    <rect x='750' y='120' width='140' height='60' rx='10' fill='#1e293b' stroke='#8b5cf6' stroke-width='1.5'/>
+    <text x='820' y='155' fill='#c084fc' font-size='12' font-weight='bold' text-anchor='middle'>HTTP Request</text>
+  </g>
+</svg>

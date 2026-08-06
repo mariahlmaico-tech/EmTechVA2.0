@@ -1,0 +1,52 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 650' width='100%' height='100%' style='background:#0f172a; font-family: system-ui, sans-serif;'>
+  <rect width='1200' height='650' fill='#0b0f19'/>
+  <rect width='1200' height='650' fill='url(#grid)' />
+
+  <rect x='40' y='25' width='440' height='38' rx='8' fill='#1e293b' stroke='#ea580c' stroke-width='1.5'/>
+  <text x='55' y='50' fill='#ffffff' font-size='14' font-weight='bold'>n8n • Automated ASMR / AI Video Creator Pipeline</text>
+
+  <g transform='translate(20, 220)'>
+    <rect x='10' y='80' width='90' height='50' rx='8' fill='#1e293b' stroke='#f97316'/>
+    <text x='55' y='105' fill='#fdba74' font-size='10' font-weight='bold' text-anchor='middle'>Schedule Trigger</text>
+
+    <line x1='100' y1='105' x2='125' y2='105' stroke='#ea580c' stroke-width='2'/>
+
+    <rect x='125' y='80' width='110' height='50' rx='8' fill='#1e293b' stroke='#10b981'/>
+    <text x='180' y='105' fill='#6ee7b7' font-size='10' font-weight='bold' text-anchor='middle'>Generate Prompt</text>
+
+    <line x1='235' y1='105' x2='260' y2='105' stroke='#ea580c' stroke-width='2'/>
+
+    <rect x='260' y='80' width='90' height='50' rx='8' fill='#1e293b' stroke='#3b82f6'/>
+    <text x='305' y='105' fill='#93c5fd' font-size='10' font-weight='bold' text-anchor='middle'>Secret Payload</text>
+
+    <line x1='350' y1='105' x2='375' y2='105' stroke='#ea580c' stroke-width='2'/>
+
+    <rect x='375' y='80' width='80' height='50' rx='8' fill='#1e293b' stroke='#ec4899'/>
+    <text x='415' y='105' fill='#fbcfe8' font-size='10' font-weight='bold' text-anchor='middle'>JWT Auth</text>
+
+    <line x1='455' y1='105' x2='480' y2='105' stroke='#ea580c' stroke-width='2'/>
+
+    <rect x='480' y='80' width='100' height='50' rx='8' fill='#1e293b' stroke='#3b82f6'/>
+    <text x='530' y='105' fill='#93c5fd' font-size='10' font-weight='bold' text-anchor='middle'>Exchange Token</text>
+
+    <line x1='580' y1='105' x2='605' y2='105' stroke='#ea580c' stroke-width='2'/>
+
+    <rect x='605' y='80' width='100' height='50' rx='8' fill='#1e293b' stroke='#8b5cf6'/>
+    <text x='655' y='105' fill='#c084fc' font-size='10' font-weight='bold' text-anchor='middle'>Generate Video</text>
+
+    <line x1='705' y1='105' x2='730' y2='105' stroke='#ea580c' stroke-width='2'/>
+
+    <rect x='730' y='80' width='70' height='50' rx='8' fill='#1e293b' stroke='#f59e0b'/>
+    <text x='765' y='105' fill='#fde68a' font-size='10' font-weight='bold' text-anchor='middle'>Wait Loop</text>
+
+    <line x1='800' y1='105' x2='825' y2='105' stroke='#ea580c' stroke-width='2'/>
+
+    <rect x='825' y='80' width='90' height='50' rx='8' fill='#1e293b' stroke='#06b6d4'/>
+    <text x='870' y='105' fill='#a5f3fc' font-size='10' font-weight='bold' text-anchor='middle'>Convert File</text>
+
+    <line x1='915' y1='105' x2='940' y2='105' stroke='#ea580c' stroke-width='2'/>
+
+    <rect x='940' y='80' width='110' height='50' rx='8' fill='#1e293b' stroke='#ef4444'/>
+    <text x='995' y='105' fill='#fca5a5' font-size='10' font-weight='bold' text-anchor='middle'>YouTube & FB API</text>
+  </g>
+</svg>
