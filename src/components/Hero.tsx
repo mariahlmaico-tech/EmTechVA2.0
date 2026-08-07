@@ -6,21 +6,18 @@ import {
   Layers,
   ArrowRight,
   Sparkles,
+  Calculator,
 } from 'lucide-react';
 import { contactData, bioSummary } from '../data/portfolioData';
 import { ScrollReveal } from './ScrollReveal';
 import { motion } from 'motion/react';
-<img
-  src="/mariah_headshot_user.png"
-  alt="Mariah Maico - AI Automation Specialist"
-  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
-/>
+
 interface HeroProps {
   onOpenROICalculator: () => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenROICalculator }) => {
-
+  const headshotPath = '/images/mariah_headshot_user.png';
 
   const corePlatforms = [
     { name: 'Zapier', icon: Zap, color: 'text-amber-600 dark:text-amber-400 bg-amber-500/10 border-amber-500/20' },
@@ -95,7 +92,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenROICalculator }) => {
               </div>
             </ScrollReveal>
 
-            {/* CTA Button */}
+            {/* CTA Buttons */}
             <ScrollReveal direction="up" delay={0.25}>
               <div className="pt-4 flex flex-wrap items-center gap-3">
                 <motion.a
@@ -107,6 +104,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenROICalculator }) => {
                   Explore Projects
                   <ArrowRight className="w-4 h-4 text-white" />
                 </motion.a>
+
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.97 }}
+                  onClick={onOpenROICalculator}
+                  className="flex items-center gap-2 px-6 py-3.5 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-semibold text-sm rounded-xl border border-indigo-300 dark:border-indigo-700/50 transition-all cursor-pointer shadow-sm"
+                >
+                  <Calculator className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+                  Calculate ROI
+                </motion.button>
               </div>
             </ScrollReveal>
           </div>
@@ -123,6 +130,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenROICalculator }) => {
                   <div className="relative rounded-xl overflow-hidden aspect-square bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800/80">
                     <img
                       src={headshotPath}
+                      onError={(e) => {
+                        e.currentTarget.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800';
+                      }}
                       alt="Mariah Maico - AI Automation Specialist"
                       className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"

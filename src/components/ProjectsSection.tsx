@@ -128,7 +128,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
         </ScrollReveal>
 
         {/* Projects Grid */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className={filteredProjects.length === 1 ? "max-w-2xl mx-auto" : "grid lg:grid-cols-2 gap-8"}>
           {filteredProjects.map((project, idx) => (
             <ScrollReveal key={project.id} direction="up" delay={idx * 0.08}>
               <motion.div

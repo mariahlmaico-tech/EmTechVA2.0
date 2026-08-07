@@ -8,7 +8,7 @@ import {
 } from '../types';
 
 import automationBanner from '../assets/images/automation_banner_1785990362639.jpg';
-import mariahHeadshot from '../assets/images/mariah_headshot_1785990345480.jpg';
+const mariahHeadshot = '/images/mariah_headshot_user.png';
 
 import asanaClientPathsImg from '../assets/images/asana_client_paths_1780115483017.png';
 import asmrVideoCreatorImg from '../assets/images/asmr_video_creator_1780115460590.png';
