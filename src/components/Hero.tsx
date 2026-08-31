@@ -129,13 +129,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenROICalculator }) => {
                   {/* Photo Header */}
                   <div className="relative rounded-xl overflow-hidden aspect-square bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800/80">
                     <img
-                      src={headshotPath}
-                      onError={(e) => {
-                        e.currentTarget.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800';
-                      }}
-                      alt="Mariah Maico - AI Automation Specialist"
-                      className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
-                      referrerPolicy="no-referrer"
+  src="/mariah_headshot_user.png"
+  alt="Mariah Maico - AI Automation Specialist"
+  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+/>"
                     />
                   </div>
                 </div>
