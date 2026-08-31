@@ -133,7 +133,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenROICalculator }) => {
   alt="Mariah Maico - AI Automation Specialist"
   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
 />
-                    />
                   </div>
                 </div>
               </div>
