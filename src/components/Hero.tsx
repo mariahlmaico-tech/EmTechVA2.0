@@ -129,7 +129,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenROICalculator }) => {
                   {/* Photo Header */}
                   <div className="relative rounded-xl overflow-hidden aspect-square bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800/80">
           <img
-  src="/mariah_headshot_user.png"
+  src="/mariah_headshot.jpg"
   alt="Mariah Maico - AI Automation Specialist"
   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
 />
